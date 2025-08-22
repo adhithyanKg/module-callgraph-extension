@@ -1,0 +1,62 @@
+{
+  "name": "module-callgraph-extension",
+  "displayName": "Generate Module Call Graph",
+  "publisher": "localtest",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.103.0"
+  },
+  "categories": [
+    "Other",
+    "Visualization"
+  ],
+  "description": "Visualize function calls between C/C++ modules in your project directly in VS Code.",
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "npx @vscode/vsce package",
+    "publish": "npx @vscode/vsce publish",
+    "lint": "eslint src --ext .ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.0",
+    "@types/vscode": "^1.103.0",
+    "@vscode/vsce": "^2.15.0",
+    "eslint": "^8.49.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "puppeteer": "^24.17.0"
+  },
+  "icon": "media/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adhithyanKg/module-callgraph-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/adhithyanKg/module-callgraph-extension/issues"
+  },
+  "homepage": "https://github.com/adhithyanKg/module-callgraph-extension/",
+  "keywords": [
+    "vscode",
+    "extension",
+    "module",
+    "callgraph",
+    "visualization"
+  ],
+
+  "contributes": {
+    "commands": [
+      {
+        "command": "moduleCallGraph.generate",
+        "title": "Generate Module Call Graph"
+      }
+    ]
+  },
+
+  "activationEvents": [
+    "onCommand:moduleCallGraph.generate"
+  ]
+}
