@@ -35,6 +35,7 @@ npm run compile
 5. Press F5 to launch a new Extension Development Host and test the extension.
 
 ## Usage
+
 1. Open a C/C++ project in VS Code.
 
 2. Run the command:
@@ -48,8 +49,8 @@ Ctrl+Shift+P → Module Call Graph: Generate
 4. Your module call graph will appear in a new panel.
 
 5. Use the buttons to:
-	Zoom In / Zoom Out
-	Export PNG / JPEG / PDF
+	-   Zoom In / Zoom Out
+	-   Export PNG / JPEG / PDF
 
 ## Example
 
@@ -59,14 +60,13 @@ File Structure
     │   ├── src/
     │   │   ├── extension.ts
     │   │   └── types
-  	|		├──pdfkit.d.ts
+	│	│	│ 	└── pdfkit.d.ts
     │   ├── media/
     │   │   ├── icon.png
     │   │   └── mermaid.min.js
     │   ├── package.json
     │   ├── tsconfig.json
     │   ├── .gitignore
-    |  	├── LICENSE
     │   └── README.md
 ```
 ## Dependencies
