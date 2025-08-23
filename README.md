@@ -2,6 +2,8 @@
 
 Visualize function calls between C/C++ modules in your project directly in VS Code. Generate interactive call graphs with export options for **PNG, JPEG, and PDF**.
 
+![Demo](/media/demo.gif)
+
 ## Features
 
 - **Automatic function parsing**: Scans `.c`, `.cpp`, `.hpp` and `.h` files to detect functions and their calls.  
